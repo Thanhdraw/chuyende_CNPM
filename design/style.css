@@ -9,11 +9,13 @@ html{
 }
 /* Header */
 #header{
+    position: fixed;
+    top: 0;
     width: 100%;
     background: #101010;
     height: 60px;
     display: flex;
-
+    z-index: 1;
 }
 #header .head{
     margin: 0 160px;
@@ -53,7 +55,20 @@ html{
     /* margin: 0 15px; */
 }
 .head .menu a{
+    display: block;
     text-decoration: none;
+    text-align: center;
+}
+.head .menu a>li{
+    display: block;
+    width: 100%;
+}
+.head .menu a:hover li{
+    cursor: pointer;
+    background-color: #f1d608;
+    border-radius: 5px;
+    padding: 2px;
+    color: #101010;
 }
 .head .menu li{
     text-decoration: none;
@@ -76,12 +91,22 @@ html{
     position: relative;
     cursor: pointer;
 }   
+.head .search-cart .search-ic:hover{
+    background-color: #f1d608;
+    cursor: pointer;
+    color: #101010;
+}
 .head .search-cart .search-ic i{
     position: absolute;
     top: 33%;
     left: 33%;
     color: #fff;
 
+}
+.head .search-cart .cart-ic:hover{
+    background-color: #f1d608;
+    cursor: pointer;
+    color: #101010;
 }
 .head .search-cart .cart-ic{
     line-height: 60px;
@@ -102,8 +127,60 @@ html{
 }
 /* Slider */
 #slider{
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    display: block;
+    height: 2000px;
+    overflow: hidden;
+}
+
+#slider .slider-img{
+    display: flex;
+}
+#slider .slider-img input{
+    display: none;
+}
+#slider .label-slider{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -1.5%;
 
 }
+.label-slider label:hover{
+    cursor: pointer;
+    background-color: #fff;
+    border-color: blue;
+}
+.label-slider label{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #c7c7c7;
+    border: 1px solid #fff;
+    margin: 0 4px;
+}
+#img1:checked ~.imgslider1  {
+    margin-left: -100%;
+}
+#img2:checked ~.imgslider2{
+    margin-left: -200%;
+}
+#img3:checked ~.imgslider3{
+    margin-left: -300%;
+}
+#img4:checked ~.imgslider4{
+    margin-left: -400%;
+}
+#slider img{
+    width: 100%;
+    height: 400;
+    object-fit: cover;
+}
+
+
+/* container */
 #container{
 
 }
