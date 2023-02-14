@@ -58,7 +58,7 @@ html{
 .head .menu a{
     display: block;
     text-decoration: none;
-    text-align: center;
+    text-align: center; 
 }
 .head .menu a>li{
     display: block;
@@ -146,43 +146,13 @@ html{
     height: 100%;
 
 }
-/* #slider .slider-img input{
-    display: none;
-} */
-/* #slider .label-slider{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-} */
+
 .label-slider label:hover{
     cursor: pointer;
     background-color: #fff;
     border-color: blue;
 }
-/* .label-slider label{
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background: #c7c7c7;
-    border: 1px solid #fff;
-    margin: 0 4px;
-} */
-/* #img1:checked ~.imgslider1  {
-    margin-left: -100%;
-}
-#img2:checked ~.imgslider2{
-    margin-left: -200%;
-}
-#img3:checked ~.imgslider3{
-    margin-left: -300%;
-}
-#img4:checked ~.imgslider4{
-    margin-left: -400%;
-} */
+
 #slider img{
     max-width: 100%;
     max-height: 100%;
@@ -193,7 +163,7 @@ html{
 #container{
     position: absolute;
     width: 100%;
-    height: 2000px;
+    /* height: 2000px; */
     background-color: #3E3E3F;
 }
 #container .policy{
@@ -272,6 +242,75 @@ html{
    color: #fff;
 
 }  
+/* box-slide */
+.box-slider{
+    height: 560px;
+}
+.box-slider .slider-iPhone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 auto 50px;
+    text-align: center;
+    width: max-content;
+}
+.box-slider .slider-iPhone i{
+    font-size: 36px;
+    margin-right: 10px;
+    color: #fff;
+}
+.box-slider .slider-iPhone .slider-iPhone-text{
+    font-size: 36px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+.box-slider .slite-cate{
+    max-width: 1200px;
+    min-width: 1024px;
+    margin: auto;
+}
+.slite-cate .list-item-product{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 400px;
+    column-gap: 20px;
+    background-color: #3E3E3F;
+    /* border-radius: 20px; */
+    overflow: hidden;
+}
+.slite-cate .list-item-product .item-product-iPhone{
+    justify-content: center;
+    width: 280px;
+    height: 397px;
+    align-items: center;
+    text-align: center;
+    background-color: #323232;
+    border-radius: 20px;
+    color: #fff;
+    overflow: hidden;
+   
+}
+.slite-cate .list-item-product .item-product-iPhone:hover{
+    cursor: pointer;
+    box-shadow: -4px -4px 8px rgb(134 134 134 / 20%), 4px 4px 8px rgb(28 28 28 / 40%);
+    overflow: hidden;
+}
+.item-product-iPhone .img-product-iPhone{
+    max-width: 280px;
+    max-height: 280px;
+}
+.img-product-iPhone img{
+    align-items: center;
+    margin-top: 30px;
+}
+.item-product-iPhone h3{
+    margin-top: 50px;
+}
+.item-product-iPhone .img-product-iPhone img{
+    width: 100%;
+}
 #footer{
 
 }
