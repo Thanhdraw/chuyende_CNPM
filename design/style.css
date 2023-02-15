@@ -301,6 +301,9 @@ html{
     max-width: 280px;
     max-height: 280px;
 }
+.item-product-iPhone .heading-and-span{
+    padding: 10px;
+}
 .img-product-iPhone img{
     align-items: center;
     margin-top: 1em;
@@ -309,7 +312,44 @@ html{
     margin-top: 25px;
 }
 .item-product-iPhone .img-product-iPhone img{
+    width: 95%;
+}
+/* Slider-video */
+.slide-topnews{
+    max-width: 1200px;
+    min-width: 1024px;
+    margin: auto;
+}
+.slide-topnews .box-slider .tekzone-list-items{
+    display: flex;
+}
+.slide-topnews .box-slider .tekzone-list-items{
+    display: flex;
+}
+.slide-topnews .box-slider .tekzone-list-items .tekzone-item{
+    width: 393.333px;
+    margin-right: 15px;
+    margin-left: 15px;
+
+
+}.slide-topnews .box-slider .tekzone-list-items .tekzone-item:hover{
+    cursor: pointer;
+    box-shadow: -4px -4px 8px rgb(134 134 134 / 20%), 4px 4px 8px rgb(28 28 28 / 40%);
+}
+.slide-topnews .box-slider .tekzone-list-items .tekzone-item{
     width: 100%;
+    border-radius: 14px;
+    background-color: #323232;
+    color: #fff;
+}
+.slide-topnews .box-slider .tekzone-list-items .tekzone-item img{
+    display: block;
+    width: 100%;
+    border-radius: 14px;
+}
+.tekzone-item .tekzone-item-text h3{
+    margin: 10px;
+    padding: 10px;
 }
 #footer{
 
