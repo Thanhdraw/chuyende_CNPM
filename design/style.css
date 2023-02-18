@@ -49,27 +49,33 @@ html{
     color: #fff;
 }
 .head .menu{
-    width: 780px;
+    width: 800px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     /* margin: 0 15px; */
 }
-.head .menu a{
+.head .menu li{
     display: block;
     text-decoration: none;
     text-align: center; 
 }
-.head .menu a>li{
-    display: block;
-    width: 100%;
+.head .menu li a{
+    /* display: block;
+    width: 100%; */
 }
-.head .menu a:hover li{
+.head .menu li {
+    width: 50%;
+    /* height: 60px; */
+    line-height: 50px;
+}
+.head .menu li:hover {
     cursor: pointer;
     background-color: #f1d608;
     border-radius: 5px;
     padding: 2px;
     color: #101010;
+    display: block;
 }
 .head .menu li{
     text-decoration: none;
