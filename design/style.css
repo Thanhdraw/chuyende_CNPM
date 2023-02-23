@@ -306,16 +306,22 @@ html{
 .item-product-iPhone .img-product-iPhone{
     max-width: 280px;
     max-height: 280px;
+    margin-bottom: 10px;
+    
 }
 .item-product-iPhone .heading-and-span{
+    position: relative;
     padding: 10px;
+
 }
 .img-product-iPhone img{
     align-items: center;
-    margin-top: 1em;
+    
 }
 .item-product-iPhone h3{
-    margin-top: 25px;
+    
+
+    
 }
 .item-product-iPhone .img-product-iPhone img{
     width: 95%;
