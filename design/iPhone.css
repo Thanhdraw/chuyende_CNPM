@@ -198,6 +198,11 @@ section .filter-cate .catergory li:hover{
 .container-product-box .list-items li{
     list-style-type: none;
 }
+.container-product-box .list-items li:hover{
+    box-shadow: 9px 9px 16px rgb(0 0 0 / 44%), 
+    -9px -9px 16px rgb(83 83 86 / 80%);
+}
+/*  */
 .container-product-box .list-items a{
     text-decoration: none;
     
