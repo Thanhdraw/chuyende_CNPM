@@ -1,5 +1,5 @@
 html {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
   }
   * {
     margin: 0;
@@ -34,12 +34,17 @@ html {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     line-height: 1;
-    padding: 25px;
+    /* padding: 25px; */
+    background-color: #3E3E3F;
+
   }
   .slider {
-    max-width: 1000px;
-    margin: 25px auto;
+    max-width: 1900px;
+    height: 100%;
+    /* margin: 25px auto; */
     position: relative;
+    margin-top: -30px;
+
   }
   .slider-next,
   .slider-prev {
@@ -60,10 +65,10 @@ html {
     z-index: 10;
   }
   .slider-next {
-    right: -25px;
+    right: 5px;
   }
   .slider-prev {
-    left: -25px;
+    left: 5px;
   }
   .slider-dots {
     position: absolute;
@@ -109,6 +114,7 @@ html {
   .slider-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 10px;
+    overflow: hidden;
   }
