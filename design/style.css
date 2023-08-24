@@ -205,6 +205,7 @@ body {
     /* flex-direction: column; */
     margin-top: 14px;
 }
+
 .fa-angle-right:before {
     content: "\f104";
     top: 20px;
@@ -370,6 +371,10 @@ body {
     border-radius: 12px;
     overflow: hidden;
     align-self: center;
+}
+
+.product .choose-product li a {
+    user-select: none;
 
 }
 
